@@ -1,12 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-  </body>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>My Portfolio</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+               <span class= "nav__logo-circle">H</span>
+               <span class= "nav__logo-name">Harsh Maniya.</span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+               <span class="nav__title">Menu</span>
+
+               <h3 class="nav__name">Harsh</h3>
+               
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link active">Home</a>
+                  </li>
+                  
+                  <li class="nav__item">
+                     <a href="about.html" class="nav__link">About Me</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="project.html" class="nav__link">Projects</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="contact.html" class="nav__link nav__link-button">Contact Me</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__buttons">
+               <!-- Toggle button -->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-4-line"></i>
+               </div>
+            </div>
+
+         </nav>
+         
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <h1 class="home__name">
+                  Harsh Maniya
+               </h1>
+
+               <div class="home__perfil">
+                  <div class="home__image">
+                     <img src="assets/img/profile.jpeg" alt="image" class="home__img">
+                     <div class="home__shadow">
+
+                        <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow">
+                        <img src="assets/img/random-lines.svg" alt="" class="home__line">
+
+                        <div class="geometric-box"></div>
+                     </div>
+                  </div>
+                  
+                  <aside class="home__social">
+                     <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+
+                     <a href="https://www.linkedin.com/" target="_blank" class="home__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                     </a>
+
+                     <a href="https://www.github.com/" target="_blank" class="home__social-link">
+                        <i class="ri-github-line"></i>
+                     </a>
+                  </aside>    
+               </div>
+
+               <div class="home__info">
+                  <p class="home__description">
+                     <b>Software Developer</b>, with knowledge in 
+                     <b>Web Development</b>, I am a person 
+                     who likes to learn new things 
+                     and I am always open to new challenges.
+                  </p>
+               </div>
+            </div>
+         </section>
+      </main>
+      
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
